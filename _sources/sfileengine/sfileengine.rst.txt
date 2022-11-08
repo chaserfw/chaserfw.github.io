@@ -1,0 +1,38 @@
+sfileengine module
+==================
+
+sfileengine Submodules
+----------------------
+
+processing_functions <processing_functions/processing_functions.rst>
+
+sfileengine Classes
+-------------------
+
+sfileengine.FileEngine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sfileengine.FileEngine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sfileengine.H5FileEngine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sfileengine.H5FileEngine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sfileengine.TRSFileEngine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sfileengine.TRSFileEngine
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sfileengine.MemoryFileEngine
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sfileengine.MemoryFileEngine
+   :members:
+   :undoc-members:
+   :show-inheritance:

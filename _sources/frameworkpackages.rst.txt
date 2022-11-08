@@ -1,0 +1,9 @@
+Framework Packages
+==================
+
+.. toctree::
+   :maxdepth: 4
+
+   Dataloaders <dataloaders/modules.rst>
+   Sutils <sutils/modules.rst>
+   Sfileengine <sfileengine/modules.rst>

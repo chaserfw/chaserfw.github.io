@@ -1,0 +1,24 @@
+.. Chaser documentation master file, created by
+   sphinx-quickstart on Wed Jul 28 09:11:24 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Chaser's documentation!
+==================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   introduction
+
+   Chaser Sandboxes <sandboxes/index.rst>
+
+   Framework Packages <frameworkpackages.rst>
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

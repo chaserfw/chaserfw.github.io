@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>sutils module &#8212; Chaser 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="sfileengine" href="../sfileengine/modules.html" />
+    <link rel="prev" title="sutils" href="modules.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../sfileengine/modules.html" title="sfileengine"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="sutils"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Chaser 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../frameworkpackages.html" >Framework Packages</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="modules.html" accesskey="U">sutils</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sutils module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="sutils-module">
+<h1>sutils module<a class="headerlink" href="#sutils-module" title="Permalink to this headline">¶</a></h1>
+<section id="sutils-classes">
+<h2>sutils Classes<a class="headerlink" href="#sutils-classes" title="Permalink to this headline">¶</a></h2>
+<section id="sutils-jsonmanager">
+<h3>sutils.JSONManager<a class="headerlink" href="#sutils-jsonmanager" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="sutils.JSONManager">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">JSONManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_load</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.From_String">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">From_String</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.From_String" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sutils.JSONManager.JSONObject">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">JSONObject</span></span><a class="headerlink" href="#sutils.JSONManager.JSONObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.add_array">
+<span class="sig-name descname"><span class="pre">add_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.add_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.add_jsonmanager">
+<span class="sig-name descname"><span class="pre">add_jsonmanager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jsonmanager</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.add_jsonmanager" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.add_string">
+<span class="sig-name descname"><span class="pre">add_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stri</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.add_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.append_to_array">
+<span class="sig-name descname"><span class="pre">append_to_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.append_to_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.get_value">
+<span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.get_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.has_key">
+<span class="sig-name descname"><span class="pre">has_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.has_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.setJSONobject">
+<span class="sig-name descname"><span class="pre">setJSONobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.setJSONobject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONManager.to_string">
+<span class="sig-name descname"><span class="pre">to_string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONManager.to_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="sutils-jsondescription">
+<h3>sutils.JSONDescription<a class="headerlink" href="#sutils-jsondescription" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="sutils.JSONDescription">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">JSONDescription</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_string</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONDescription" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sutils.JSONManager" title="sutils.jsonmanager.JSONManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">sutils.jsonmanager.JSONManager</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONDescription.Get_Mdata_Definition">
+<span class="sig-name descname"><span class="pre">Get_Mdata_Definition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONDescription.Get_Mdata_Definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sutils.JSONDescription.Set_Mdata_Definition">
+<span class="sig-name descname"><span class="pre">Set_Mdata_Definition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_metadataColumns</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONDescription.Set_Mdata_Definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="sutils-jsonmetadatacolumn">
+<h3>sutils.JSONMetadataColumn<a class="headerlink" href="#sutils-jsonmetadatacolumn" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="sutils.JSONMetadataColumn">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">JSONMetadataColumn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lbyte</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fbyte</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.JSONMetadataColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#sutils.JSONManager" title="sutils.jsonmanager.JSONManager"><code class="xref py py-class docutils literal notranslate"><span class="pre">sutils.jsonmanager.JSONManager</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="sutils.JSONMetadataColumn.Fbyte">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">Fbyte</span></span><a class="headerlink" href="#sutils.JSONMetadataColumn.Fbyte" title="Permalink to this definition">¶</a></dt>
+<dd><p>docstring</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sutils.JSONMetadataColumn.Lbyte">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">Lbyte</span></span><a class="headerlink" href="#sutils.JSONMetadataColumn.Lbyte" title="Permalink to this definition">¶</a></dt>
+<dd><p>docstring</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sutils.JSONMetadataColumn.Name">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">Name</span></span><a class="headerlink" href="#sutils.JSONMetadataColumn.Name" title="Permalink to this definition">¶</a></dt>
+<dd><p>docstring</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="sutils-functions">
+<h2>sutils Functions<a class="headerlink" href="#sutils-functions" title="Permalink to this headline">¶</a></h2>
+<section id="sutils-numpy2json">
+<h3>sutils.numpy2json<a class="headerlink" href="#sutils-numpy2json" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.numpy2json">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">numpy2json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numpy_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.numpy2json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-save-json">
+<h3>sutils.save_json<a class="headerlink" href="#sutils-save-json" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.save_json">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">save_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.save_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-classes-indexes2json">
+<h3>sutils.classes_indexes2json<a class="headerlink" href="#sutils-classes-indexes2json" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.classes_indexes2json">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">classes_indexes2json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">classes_indexes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.classes_indexes2json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-load-json">
+<h3>sutils.load_json<a class="headerlink" href="#sutils-load-json" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.load_json">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">load_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.load_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-load-json-from-string">
+<h3>sutils.load_json_from_string<a class="headerlink" href="#sutils-load-json-from-string" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.load_json_from_string">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">load_json_from_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.load_json_from_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-get-last-id-process">
+<h3>sutils.get_last_id_process<a class="headerlink" href="#sutils-get-last-id-process" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.get_last_id_process">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">get_last_id_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jsonmanager</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.get_last_id_process" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-get-file-suffix">
+<h3>sutils.get_file_suffix<a class="headerlink" href="#sutils-get-file-suffix" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.get_file_suffix">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">get_file_suffix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sutils.get_file_suffix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-check-file-exists">
+<h3>sutils.check_file_exists<a class="headerlink" href="#sutils-check-file-exists" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.check_file_exists">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">check_file_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.check_file_exists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-load-ascad-attack-groups">
+<h3>sutils.load_ascad_attack_groups<a class="headerlink" href="#sutils-load-ascad-attack-groups" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.load_ascad_attack_groups">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">load_ascad_attack_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ascad_database_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trace_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_metadata</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.load_ascad_attack_groups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Carga las trazas y los labels (ademas de la metadata) desde el archivo .h5
+que es el formato usado por ASCAD.
+ADVERTENCIA: especial cuidado con el tipo de dato en trace_type, porque podrian cargarse todo como ceros.</p>
+</dd></dl>
+
+</section>
+<section id="sutils-create-new-train-dir">
+<h3>sutils.create_new_train_dir<a class="headerlink" href="#sutils-create-new-train-dir" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.create_new_train_dir">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">create_new_train_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ismul</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.create_new_train_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Esta funcion crea un directorio cuyo nombre esta compuesto por la fecha, y el timestamp
+sirve para llevar orden en cada intento de entrenamiento, con un burdo control de tiempo</p>
+</dd></dl>
+
+</section>
+<section id="sutils-format-name">
+<h3>sutils.format_name<a class="headerlink" href="#sutils-format-name" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.format_name">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">format_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sutils.format_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Funcion auxiliar para create_new_train_dir</p>
+</dd></dl>
+
+</section>
+<section id="sutils-save-scaler">
+<h3>sutils.save_scaler<a class="headerlink" href="#sutils-save-scaler" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.save_scaler">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">save_scaler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaler</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.save_scaler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves a scaler in the given path</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path (str): Path of the directory to save the scaler
+scaler: a sklear scaler</p>
+</dd>
+<dt>Returns:</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="sutils-load-scaler">
+<h3>sutils.load_scaler<a class="headerlink" href="#sutils-load-scaler" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.load_scaler">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">load_scaler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.load_scaler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads a scaler from the given path</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path (str): Path of the directory to save the scaler</p>
+</dd>
+<dt>Returns:</dt><dd><p>scaler: A sklear scaler</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="sutils-check-for-modules">
+<h3>sutils.check_for_modules<a class="headerlink" href="#sutils-check-for-modules" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.check_for_modules">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">check_for_modules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_names</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.check_for_modules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether the given modules are instaled, if not a set of 
+the missing package are returned</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dict_names(dict): a dictionary with the module names</p>
+</dd>
+<dt>Returns:</dt><dd><p>missing modules (set): a set with the missing modules</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="sutils-file-exists">
+<h3>sutils.file_exists<a class="headerlink" href="#sutils-file-exists" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.file_exists">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">file_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.file_exists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-get-description">
+<h3>sutils.get_description<a class="headerlink" href="#sutils-get-description" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.get_description">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">get_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trs_file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.get_description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-tqdm">
+<h3>sutils.tqdm<a class="headerlink" href="#sutils-tqdm" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.tqdm">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">tqdm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">total</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.tqdm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="sutils-trange">
+<h3>sutils.trange<a class="headerlink" href="#sutils-trange" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="sutils.trange">
+<span class="sig-prename descclassname"><span class="pre">sutils.</span></span><span class="sig-name descname"><span class="pre">trange</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#sutils.trange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">sutils module</a><ul>
+<li><a class="reference internal" href="#sutils-classes">sutils Classes</a><ul>
+<li><a class="reference internal" href="#sutils-jsonmanager">sutils.JSONManager</a></li>
+<li><a class="reference internal" href="#sutils-jsondescription">sutils.JSONDescription</a></li>
+<li><a class="reference internal" href="#sutils-jsonmetadatacolumn">sutils.JSONMetadataColumn</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sutils-functions">sutils Functions</a><ul>
+<li><a class="reference internal" href="#sutils-numpy2json">sutils.numpy2json</a></li>
+<li><a class="reference internal" href="#sutils-save-json">sutils.save_json</a></li>
+<li><a class="reference internal" href="#sutils-classes-indexes2json">sutils.classes_indexes2json</a></li>
+<li><a class="reference internal" href="#sutils-load-json">sutils.load_json</a></li>
+<li><a class="reference internal" href="#sutils-load-json-from-string">sutils.load_json_from_string</a></li>
+<li><a class="reference internal" href="#sutils-get-last-id-process">sutils.get_last_id_process</a></li>
+<li><a class="reference internal" href="#sutils-get-file-suffix">sutils.get_file_suffix</a></li>
+<li><a class="reference internal" href="#sutils-check-file-exists">sutils.check_file_exists</a></li>
+<li><a class="reference internal" href="#sutils-load-ascad-attack-groups">sutils.load_ascad_attack_groups</a></li>
+<li><a class="reference internal" href="#sutils-create-new-train-dir">sutils.create_new_train_dir</a></li>
+<li><a class="reference internal" href="#sutils-format-name">sutils.format_name</a></li>
+<li><a class="reference internal" href="#sutils-save-scaler">sutils.save_scaler</a></li>
+<li><a class="reference internal" href="#sutils-load-scaler">sutils.load_scaler</a></li>
+<li><a class="reference internal" href="#sutils-check-for-modules">sutils.check_for_modules</a></li>
+<li><a class="reference internal" href="#sutils-file-exists">sutils.file_exists</a></li>
+<li><a class="reference internal" href="#sutils-get-description">sutils.get_description</a></li>
+<li><a class="reference internal" href="#sutils-tqdm">sutils.tqdm</a></li>
+<li><a class="reference internal" href="#sutils-trange">sutils.trange</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">sutils</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../sfileengine/modules.html"
+                        title="next chapter">sfileengine</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/sutils/sutils.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../sfileengine/modules.html" title="sfileengine"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="sutils"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Chaser 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../frameworkpackages.html" >Framework Packages</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="modules.html" >sutils</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sutils module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Servio Paguada.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.1.2.
+    </div>
+  </body>
+</html>

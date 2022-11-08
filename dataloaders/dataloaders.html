@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>dataloaders module &#8212; Chaser 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="sutils" href="../sutils/modules.html" />
+    <link rel="prev" title="dataloaders" href="modules.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../sutils/modules.html" title="sutils"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="dataloaders"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Chaser 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../frameworkpackages.html" >Framework Packages</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="modules.html" accesskey="U">dataloaders</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dataloaders module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="dataloaders-module">
+<h1>dataloaders module<a class="headerlink" href="#dataloaders-module" title="Permalink to this headline">¶</a></h1>
+<section id="dataloaders-classes">
+<h2>dataloaders Classes<a class="headerlink" href="#dataloaders-classes" title="Permalink to this headline">¶</a></h2>
+<section id="dataloaders-profileloader">
+<h3>dataloaders.ProfileLoader<a class="headerlink" href="#dataloaders-profileloader" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataloaders.ProfileLoader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">ProfileLoader</span></span><a class="headerlink" href="#dataloaders.ProfileLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="dataloaders.ProfileLoader.LoaderMethod">
+<span class="sig-name descname"><span class="pre">LoaderMethod</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#dataloaders.ProfileLoader.LoaderMethod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="dataloaders.ProfileLoader.TypeLoader">
+<span class="sig-name descname"><span class="pre">TypeLoader</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'Profile'</span></em><a class="headerlink" href="#dataloaders.ProfileLoader.TypeLoader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.ProfileLoader.with_balancer">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">with_balancer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balancer_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.ProfileLoader.with_balancer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.ProfileLoader.with_limiters">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">with_limiters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_limit</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_limit</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.ProfileLoader.with_limiters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from profiling group, from 0 to the specified train_limit.
+If val_limit specified it should be bigger than train_limit, and the returning
+entries would be from train_limit to val_limit</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path (str):</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>train_limit (str):</dt><dd><p>superior bound of the train set [0:train_limit]</p>
+</dd>
+<dt>val_limit (int):</dt><dd><p>superior bound of the validation set [train_limit:val_limit]</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><p>The amount of samples taken to compound the new traces. If zero, it will take
+the whole samples. default (0)</p>
+</dd>
+</dl>
+</dd>
+<dt>More args (kwargs):</dt><dd><p>‘metadata_type’ : datatype of the metadata to set the target array
+‘trace_type’    : datatype of the trace to set the target array
+‘label_type’    : datatype of the label to set the target array</p>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train, y_train, train_indexes), (x_val, y_val, val_indexes).
+If n_val_split parameter is 0, it returns only train tuple.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="dataloaders-databalancer">
+<h3>dataloaders.DataBalancer<a class="headerlink" href="#dataloaders-databalancer" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataloaders.DataBalancer">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">DataBalancer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.DataBalancer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents a DataBalancer that creates a set of indexes of the traces by labels
+it uses the criterion of minimal class.</p>
+<p>Instancies a DataBalancer from a file that contains the information about itself</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – path of the data balancer file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.DataBalancer.create_index_map">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">create_index_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5fileEngine</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="../sfileengine/sfileengine.html#sfileengine.H5FileEngine" title="sfileengine.h5fileengine.H5FileEngine"><span class="pre">sfileengine.h5fileengine.H5FileEngine</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#dataloaders.DataBalancer.create_index_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and data balacer base file from an H5FileEngine</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>h5fileEngine</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">H5FileEngine</span></code>) – H5FileEngine of the trace set</p></li>
+<li><p><strong>filename</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – the file name</p></li>
+<li><p><strong>suffix</strong> (<cite>bool</cite>) – Add a suffix to the filename</p></li>
+<li><p><strong>path</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – the target path of the file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.DataBalancer.get_data_balanced">
+<span class="sig-name descname"><span class="pre">get_data_balanced</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">,</span> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dataloaders.DataBalancer.get_data_balanced" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the a tuple with two dicts that specifies the index of the array
+taking care that it contains the same amount of indexes of the minor class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_index</strong> (<em>int</em>) – Specifies the amount of indexes that we want.</p></li>
+<li><p><strong>n_index_val</strong> (<em>int</em><em>, </em><em>optional</em>) – Specifies the amount of indexes that we want to build a validation set, default to None</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A tuple of two dicts, one for train set and the other for validation 
+set</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tuple[dict, dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.DataBalancer.get_minor_class">
+<span class="sig-name descname"><span class="pre">get_minor_class</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dataloaders.DataBalancer.get_minor_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the class which has the less number of traces related to it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A tuple of two int’s</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple[int,</span> <span class="pre">int]</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="dataloaders-dataloader">
+<h3>dataloaders.DataLoader<a class="headerlink" href="#dataloaders-dataloader" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataloaders.DataLoader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">DataLoader</span></span><a class="headerlink" href="#dataloaders.DataLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="dataloaders-attackloader">
+<h3>dataloaders.AttackLoader<a class="headerlink" href="#dataloaders-attackloader" title="Permalink to this headline">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="dataloaders.AttackLoader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">AttackLoader</span></span><a class="headerlink" href="#dataloaders.AttackLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="dataloaders.AttackLoader.LoaderMethod">
+<span class="sig-name descname"><span class="pre">LoaderMethod</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#dataloaders.AttackLoader.LoaderMethod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="dataloaders.AttackLoader.TypeLoader">
+<span class="sig-name descname"><span class="pre">TypeLoader</span></span><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">'Attack'</span></em><a class="headerlink" href="#dataloaders.AttackLoader.TypeLoader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.AttackLoader.with_balancer">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">with_balancer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balancer_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nbytes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.AttackLoader.with_balancer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dataloaders.AttackLoader.with_limiters">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">with_limiters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attack_limit</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.AttackLoader.with_limiters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from profiling group, from 0 to the specified train_limit.
+If val_limit specified it should be bigger than train_limit, and the returning
+entries would be from train_limit to val_limit</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path (str):</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>attack_limit (str):</dt><dd><p>superior bound of the attack set [0:train_limit]</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><p>The amount of samples taken to compound the new traces. If zero, it will take
+the whole samples. default (0)</p>
+</dd>
+</dl>
+</dd>
+<dt>More args (kwargs):</dt><dd><p>‘metadata_type’ : datatype of the metadata to set the target array
+‘trace_type’    : datatype of the trace to set the target array
+‘label_type’    : datatype of the label to set the target array</p>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train_attack, y_train_attack, plt_attack).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="dataloaders-functions">
+<h2>dataloaders Functions<a class="headerlink" href="#dataloaders-functions" title="Permalink to this headline">¶</a></h2>
+<section id="dataloaders-load-attack-limit">
+<h3>dataloaders.load_attack_limit<a class="headerlink" href="#dataloaders-load-attack-limit" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.load_attack_limit">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">load_attack_limit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attack_limit</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.load_attack_limit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from profiling group, from 0 to the specified train_limit.
+If val_limit specified it should be bigger than train_limit, and the returning
+entries would be from train_limit to val_limit</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path (str):</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>attack_limit (int):</dt><dd><p>superior bound of the attack set [0:attack_limit]</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><dl class="simple">
+<dt>The amount of samples taken to compound the new traces. If zero, it will take</dt><dd><p>the whole samples. default (0)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>More args (kwargs):</dt><dd><p>‘metadata_type’ : datatype of the metadata to set the target array
+‘trace_type’    : datatype of the trace to set the target array
+‘label_type’    : datatype of the label to set the target array</p>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train_attack, y_train_attack, plt_attack).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="dataloaders-load-dataset-sss">
+<h3>dataloaders.load_dataset_sss<a class="headerlink" href="#dataloaders-load-dataset-sss" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.load_dataset_sss">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">load_dataset_sss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_train_split</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">train_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_val_split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.load_dataset_sss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data using StratifiedShuffleSplit methods.
+Balance the data to avoid class imbalance</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path:</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>n_train_split:</dt><dd><p>Number of examples of a class for the trainig set.
+Considering that there are 256 classes, meaning,
+the leakage model used is ID.</p>
+</dd>
+<dt>train_limit:</dt><dd><p>In the original dataset, the superior bound that limits the search of classes.</p>
+</dd>
+<dt>n_val_split:</dt><dd><p>Number of examples of a class for the validation set.
+Considering that there are 256 classes, meaning,
+the leakage model used is ID.</p>
+</dd>
+<dt>val_limit:</dt><dd><p>In the original dataset, the superior bound that limits the search of classes.
+val_limit works in conjuction with train_limit, creating a bounded interval
+[train_limit, val_limit]. It should be positive and bigger than train_limit</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><p>The amount of samples taken to compound the new traces. If zero, it will take
+the whole samples. default (0)</p>
+</dd>
+</dl>
+</dd>
+<dt>More args (kwargs):</dt><dd><p>‘metadata_type’ : datatype of the metadata to set the target array
+‘trace_type’    : datatype of the trace to set the target array
+‘label_type’    : datatype of the label to set the target array</p>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train, y_train, train_indexes), (x_val, y_val, val_indexes).
+If n_val_split parameter is 0, it returns only train tuple.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="dataloaders-load-attack-dataset-sss">
+<h3>dataloaders.load_attack_dataset_sss<a class="headerlink" href="#dataloaders-load-attack-dataset-sss" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.load_attack_dataset_sss">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">load_attack_dataset_sss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_attack_split</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attack_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nbytes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.load_attack_dataset_sss" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from attack group using StratifiedShuffleSplit methods.
+Balance the data to avoid class imbalance</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path:</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>n_attack_split:</dt><dd><p>Number of examples of a class for the trainig set.
+Considering that there are 256 classes, meaning,
+the leakage model used is ID.</p>
+</dd>
+<dt>attack_limit:</dt><dd><p>In the original dataset, the superior bound that limits the search of classes.</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><p>The amount of samples taken to compound the new traces. If zero, it will take
+the whole samples. default (0)</p>
+</dd>
+<dt>nbytes:</dt><dd><p>Number of bytes plaintext compresed</p>
+</dd>
+</dl>
+</dd>
+<dt>More args (kwargs):</dt><dd><p>‘metadata_type’ : datatype of the metadata to set the target array
+‘trace_type’    : datatype of the trace to set the target array
+‘label_type’    : datatype of the label to set the target array</p>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train_attack, y_train_attack, plt_attack).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="dataloaders-load-dataset-sss-random">
+<h3>dataloaders.load_dataset_sss_random<a class="headerlink" href="#dataloaders-load-dataset-sss-random" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.load_dataset_sss_random">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">load_dataset_sss_random</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">dataset_path</span></em>, <em class="sig-param"><span class="pre">n_train_split</span></em>, <em class="sig-param"><span class="pre">data_type=&lt;class</span> <span class="pre">'numpy.float32'&gt;</span></em>, <em class="sig-param"><span class="pre">train_limit=None</span></em>, <em class="sig-param"><span class="pre">n_val_split=0</span></em>, <em class="sig-param"><span class="pre">val_limit=0</span></em>, <em class="sig-param"><span class="pre">scalers_list=None</span></em>, <em class="sig-param"><span class="pre">samples=0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.load_dataset_sss_random" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from proile group using StratifiedShuffleSplit methods from a computed
+permuted set of indexes. This function was created to increase the randomness when
+several experiments are aimed to be conducted. The natural follow step is to compute
+a confidence interval. This functions also serves as a way to apply randomness to a set
+of traces.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path:</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>n_train_split:</dt><dd><p>Number of examples of a class for the trainig set.
+Considering that there are 256 classes, meaning,
+the leakage model used is ID.</p>
+</dd>
+<dt>attack_limit:</dt><dd><p>In the original dataset, the superior bound that limits the search of classes.</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><p>The amount of samples taken to compound the new traces. If zero, it will take
+the whole samples. default (0)</p>
+</dd>
+<dt>nbytes:</dt><dd><p>Number of bytes plaintext compresed</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train, y_train, train_indexes), (x_val, y_val, val_indexes).
+If n_val_split parameter is 0, it returns only train tuple.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="dataloaders-load-with-data-balancer">
+<h3>dataloaders.load_with_data_balancer<a class="headerlink" href="#dataloaders-load-with-data-balancer" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.load_with_data_balancer">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">load_with_data_balancer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balancer_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index_val</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.load_with_data_balancer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="dataloaders-load-attack-with-data-balancer">
+<h3>dataloaders.load_attack_with_data_balancer<a class="headerlink" href="#dataloaders-load-attack-with-data-balancer" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.load_attack_with_data_balancer">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">load_attack_with_data_balancer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balancer_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">samples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scalers_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nbytes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.load_attack_with_data_balancer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from attack group using StratifiedShuffleSplit methods.
+Balance the data to avoid class imbalance</p>
+<dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>dataset_path:</dt><dd><p>The path where the dataset is storaged</p>
+</dd>
+<dt>balancer_file:</dt><dd><p>Number of examples of a class for the trainig set.
+Considering that there are 256 classes, meaning,
+the leakage model used is ID.</p>
+</dd>
+<dt>attack_limit:</dt><dd><p>In the original dataset, the superior bound that limits the search of classes.</p>
+</dd>
+<dt>scalers_list:</dt><dd><p>A list of not fitted scalers.</p>
+</dd>
+<dt>samples:</dt><dd><p>The amount of samples taken to compound the new traces. If zero, it will take
+the whole samples. default (0)</p>
+</dd>
+<dt>nbytes:</dt><dd><p>Number of bytes plaintext compresed</p>
+</dd>
+</dl>
+</dd>
+<dt>More args (kwargs):</dt><dd><p>‘metadata_type’ : datatype of the metadata to set the target array
+‘trace_type’    : datatype of the trace to set the target array
+‘label_type’    : datatype of the label to set the target array</p>
+</dd>
+<dt>Returns:</dt><dd><p>A tuple comprises subtuple of (x_train_attack, y_train_attack, plt_attack).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="dataloaders-check-is-fitted">
+<h3>dataloaders.check_is_fitted<a class="headerlink" href="#dataloaders-check-is-fitted" title="Permalink to this headline">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="dataloaders.check_is_fitted">
+<span class="sig-prename descclassname"><span class="pre">dataloaders.</span></span><span class="sig-name descname"><span class="pre">check_is_fitted</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">estimator</span></em>, <em class="sig-param"><span class="pre">attributes=None</span></em>, <em class="sig-param"><span class="pre">*</span></em>, <em class="sig-param"><span class="pre">msg=None</span></em>, <em class="sig-param"><span class="pre">all_or_any=&lt;built-in</span> <span class="pre">function</span> <span class="pre">all&gt;</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dataloaders.check_is_fitted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform is_fitted validation for estimator.
+Checks if the estimator is fitted by verifying the presence of
+fitted attributes (ending with a trailing underscore) and otherwise
+raises a NotFittedError with the given message.
+This utility is meant to be used internally by estimators themselves,
+typically in their own predict / transform methods.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>estimator</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.preprocessing.StandardScaler</span></code>, or 
+<code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.preprocessing.MimMaxScaler</span></code>) – Estimator instance for which the check is performed.
+it could be <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.preprocessing.StandardScaler</span></code> or 
+<code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.preprocessing.MimMaxScaler</span></code></p></li>
+<li><p><strong>attributes</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code> or tuple of <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, optional) – Attribute name(s) given as string or a list/tuple of strings
+Eg.: <code class="docutils literal notranslate"><span class="pre">[&quot;coef_&quot;,</span> <span class="pre">&quot;estimator_&quot;,</span> <span class="pre">...],</span> <span class="pre">&quot;coef_&quot;</span></code>
+If <cite>None</cite>, <cite>estimator</cite> is considered fitted if there exist an
+attribute that ends with a underscore and does not start with double
+underscore. 
+default=None</p></li>
+<li><p><strong>msg</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, optional) – The default error message is, “This %(name)s instance is not fitted
+yet. Call ‘fit’ with appropriate arguments before using this
+estimator.”
+For custom messages if “%(name)s” is present in the message string,
+it is substituted for the estimator name.
+Eg. : “Estimator, %(name)s, must be fitted before sparsifying”.
+default=None</p></li>
+<li><p><strong>all_or_any</strong> (<em>callable</em><em>, </em><em>{all</em><em>, </em><em>any}</em><em>, </em><em>default=all</em>) – Specify whether all or any of the given attributes must exist.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">None</span></code>, Raise</p>
+</dd>
+<dt class="field-even">Except</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">NotFittedError</span></code>, If the attributes are not found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">dataloaders module</a><ul>
+<li><a class="reference internal" href="#dataloaders-classes">dataloaders Classes</a><ul>
+<li><a class="reference internal" href="#dataloaders-profileloader">dataloaders.ProfileLoader</a></li>
+<li><a class="reference internal" href="#dataloaders-databalancer">dataloaders.DataBalancer</a></li>
+<li><a class="reference internal" href="#dataloaders-dataloader">dataloaders.DataLoader</a></li>
+<li><a class="reference internal" href="#dataloaders-attackloader">dataloaders.AttackLoader</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dataloaders-functions">dataloaders Functions</a><ul>
+<li><a class="reference internal" href="#dataloaders-load-attack-limit">dataloaders.load_attack_limit</a></li>
+<li><a class="reference internal" href="#dataloaders-load-dataset-sss">dataloaders.load_dataset_sss</a></li>
+<li><a class="reference internal" href="#dataloaders-load-attack-dataset-sss">dataloaders.load_attack_dataset_sss</a></li>
+<li><a class="reference internal" href="#dataloaders-load-dataset-sss-random">dataloaders.load_dataset_sss_random</a></li>
+<li><a class="reference internal" href="#dataloaders-load-with-data-balancer">dataloaders.load_with_data_balancer</a></li>
+<li><a class="reference internal" href="#dataloaders-load-attack-with-data-balancer">dataloaders.load_attack_with_data_balancer</a></li>
+<li><a class="reference internal" href="#dataloaders-check-is-fitted">dataloaders.check_is_fitted</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">dataloaders</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../sutils/modules.html"
+                        title="next chapter">sutils</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/dataloaders/dataloaders.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../sutils/modules.html" title="sutils"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="dataloaders"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Chaser 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../frameworkpackages.html" >Framework Packages</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="modules.html" >dataloaders</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dataloaders module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Servio Paguada.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.1.2.
+    </div>
+  </body>
+</html>

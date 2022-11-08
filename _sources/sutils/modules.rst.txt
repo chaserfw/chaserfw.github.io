@@ -1,0 +1,7 @@
+sutils
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   sutils

@@ -1,0 +1,4 @@
+Introduction
+==================================
+
+Chaser is a specilized Framework to conduct side-channel analysis

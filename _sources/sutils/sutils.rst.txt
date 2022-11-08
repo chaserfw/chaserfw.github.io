@@ -1,0 +1,102 @@
+sutils module
+=============
+
+sutils Classes
+-------------------
+
+sutils.JSONManager
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sutils.JSONManager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sutils.JSONDescription
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sutils.JSONDescription
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sutils.JSONMetadataColumn
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autoclass:: sutils.JSONMetadataColumn
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+sutils Functions
+---------------------
+
+sutils.numpy2json
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.numpy2json
+
+sutils.save_json
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.save_json
+
+sutils.classes_indexes2json
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.classes_indexes2json
+
+sutils.load_json
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.load_json
+
+sutils.load_json_from_string
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.load_json_from_string
+
+sutils.get_last_id_process
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.get_last_id_process
+
+sutils.get_file_suffix
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.get_file_suffix
+
+sutils.check_file_exists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.check_file_exists
+
+sutils.load_ascad_attack_groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.load_ascad_attack_groups
+
+sutils.create_new_train_dir
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.create_new_train_dir
+
+sutils.format_name
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.format_name
+
+sutils.save_scaler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.save_scaler
+
+sutils.load_scaler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.load_scaler
+
+sutils.check_for_modules
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.check_for_modules
+
+sutils.file_exists
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.file_exists
+
+sutils.get_description
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.get_description
+
+sutils.tqdm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.tqdm
+
+sutils.trange
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. autofunction:: sutils.trange
+
